@@ -42,6 +42,10 @@ const listNotes = () => {
   notes.forEach((note) => {
     console.log(note.title);
   });
+
+  if (notes.length === 0) {
+    console.log("You have 0 notes");
+  }
 };
 
 const readNote = (title) => {
